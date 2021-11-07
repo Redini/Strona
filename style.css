@@ -1,0 +1,598 @@
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  overflow-x: hidden;
+  font-family: 'Teko', sans-serif;
+
+}
+a:link {
+  text-decoration: none;
+  color: white;
+}
+a:visited {
+  color: white;
+}
+a:hover {
+  color: #000000;
+}
+#wrapper {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 10fr 1fr;
+  grid-template-rows: 100px auto 50px;
+  grid-template-areas:
+    "nav nav"
+    "section aside"
+    "footer footer";
+}
+#wrapper_albumy{
+  display: grid;
+  width: 100vw;
+  height: auto;
+  grid-template-columns: 10fr;
+  grid-template-rows: 100px auto 50px;
+  grid-template-areas:
+    "nav "
+    "section "
+    "footer ";
+    
+}
+
+nav {
+  grid-area: nav;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: space-around;
+  background-color: #d72638;
+
+  flex-direction: row;
+}
+nav a {
+  transition: all 0.5s;
+}
+nav > * {
+  line-height: 100px;
+  flex: 2 1 auto;
+  display: flex;
+  justify-content: space-around;
+}
+nav svg {
+  height: 30px;
+  width: 30px;
+}
+nav div#Tytul {
+  font-size: 1.75em;
+  font-weight: bold;
+}
+
+section#MainPage {
+  grid-area: section;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d3d4cf;
+}
+
+#MainPage > p {
+  width: 400px;
+  height: 600px;
+  font-size: 1.75em;
+  text-align: justify;
+  font-family: "Abril Fatface", cursive;
+}
+
+
+.cardContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.newsCard {
+  width: 400px;
+  height: auto;
+  margin: 70px;
+}
+.newsCard  p {
+  opacity: 0.5;
+  font-weight: bold;
+  text-align: justify;
+}
+.newsCard  img {
+  width: 100%;
+}
+
+
+Section#PolskaPage {
+  grid-area: section;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #d3d4cf;
+ 
+}
+#PolskaPage a{
+  margin: 0 40%;
+}
+
+#Top {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  justify-content: center;
+  padding: 0 1.5%;
+  font-family: 'Teko', sans-serif;
+}
+#PolskiTable{
+  width: 400px;
+  height: 600px;
+  text-align: center;
+  font-family: 'Teko', sans-serif;
+}
+
+#PolskiTable td,tr,th,table{
+  border: 2px solid royalblue;
+  border-collapse: collapse;
+}
+
+#PolskiButton {
+  width: 100px;
+  height: 50px;
+  padding: 5px;
+  
+  border: 1px solid royalblue;
+  color: #e3e3e3;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+  border-radius: 10%;
+  background-color: royalblue;
+
+}
+#PolskiButton:hover {
+  background-color: #e3e3e3;
+  color: black;
+  transform: scale(1.1, 1.1);
+}
+#Polska_Album{
+  grid-area: section;
+  
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #d3d4cf;
+  height: auto;
+
+
+}
+.opis_albumy {
+  font-size: 1.2em;
+  text-align: justify;
+  width: 40%;
+  opacity: 0.7;
+  font-family: "Abril Fatface", cursive;
+  
+
+}
+#opis_płyty {
+  width: auto;
+  height: auto;
+  
+
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+.Najemik {
+  background-image: url(dzem.jpg);
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+  background-position: center;
+  transition-duration: 1s;
+  
+}
+
+.Najemik:hover {
+  background-image: url(dzem2.jfif);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transition-duration: 1s;
+}
+
+.XXX {
+  background-image: url(XXX.jpg);
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+  background-position: center;
+  transition-duration: 1s;
+}
+
+.XXX:hover {
+  background-image: url(XXX.jfif);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transition-duration: 1s;
+}
+
+.Tango {
+  background-image: url(tango.jfif);
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+  background-position: center;
+  transition-duration: 1s;
+}
+
+.Tango:hover {
+  background-image: url(tango1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transition-duration: 1s;
+}
+
+.IRA9 {
+  background-image: url(ira9.jfif);
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+  background-position: center;
+  transition-duration: 1s;
+}
+
+.IRA9:hover {
+  background-image: url(ira91.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transition-duration: 1s;
+}
+
+.Happysad {
+  background-image: url(happy.jfif);
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+  background-position: center;
+  transition-duration: 1s;
+}
+
+.Happysad:hover {
+  background-image: url(happy2.jfif);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transition-duration: 1s;
+}
+
+.Coma {
+  background-image: url(coma.jpg);
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+  background-position: center;
+  transition-duration: 1s;
+}
+
+.Coma:hover {
+  background-image: url(coma1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transition-duration: 1s;
+}
+
+.Kazik {
+  background-image: url(kazik.jpg);
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+  background-position: center;
+  transition-duration: 1s;
+}
+
+.Kazik:hover {
+  background-image: url(kazik1.jfif);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transition-duration: 1s;
+}
+.Meteora {
+  background-image: url(Meteora2.jpg);
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+  background-position: center;
+  transition-duration: 1s;
+}
+
+.Meteora:hover {
+  background-image: url(Meteora.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transition-duration: 1s;
+}
+
+.title_Albumy {
+  font-size: 1.5em;
+font-family: "Abril Fatface", cursive;
+  font-weight: 700;
+}
+
+.Appetite {
+  background-image: url(apetite.jfif);
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+  background-position: center;
+  transition-duration: 1s;
+}
+
+.Appetite:hover {
+  background-image: url(apetite1.jfif);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transition-duration: 1s;
+}
+
+.Foo {
+  background-image: url(Foo.jpg);
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+  background-position: center;
+  transition-duration: 1s;
+}
+
+.Foo:hover {
+  background-image: url(Foo1.jfif);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transition-duration: 1s;
+}
+
+.Nightmare {
+  background-image: url(Nightmare.jpg);
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+  background-position: center;
+  transition-duration: 1s;
+}
+
+.Nightmare:hover {
+  background-image: url(Nightmare1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transition-duration: 1s;
+}
+
+.Green {
+  background-image: url(Green.jpg);
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+  background-position: center;
+  transition-duration: 1s;
+}
+
+.Green:hover {
+  background-image: url(Green1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transition-duration: 1s;
+}
+
+.Second_helping {
+  background-image: url(Helping.jpg);
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+  background-position: center;
+  transition-duration: 1s;
+}
+
+.Second_helping:hover {
+  background-image: url(Second1.jfif);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transition-duration: 1s;
+}
+
+.Lady {
+  background-image: url(Lady.jfif);
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+  background-position: center;
+  transition-duration: 1s;
+}
+.Lady:hover {
+  background-image: url(lady1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transition-duration: 1s;
+}
+.mirage {
+  background-image: url(Mirage2.jpg);
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+  background-position: center;
+  transition-duration: 1s;
+}
+.mirage:hover {
+  background-image: url(Mirage.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transition-duration: 1s;
+}
+.title_mirage {
+  text-align: left;
+  font-weight: 700;
+}
+.better_life {
+  background-image: url(better.jpg);
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+  background-position: center;
+  transition-duration: 1s;
+}
+.better_life:hover {
+  background-image: url(better1.jfif);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transition-duration: 1s;
+}
+
+aside {
+  grid-area: aside;
+  background-image: url(banner.png);
+  background-position: center;
+  background-size: cover;
+}
+
+footer {
+  grid-area: footer;
+  line-height: 50px;
+  text-align: center;
+  background-color: #0c120c;
+  color: white;
+  overflow: hidden;
+}
+.rollingstone{
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border-radius: 50px;
+  height: 100px;
+  width: 100px;
+  background-image: url(stones.jpg);
+  top: 86vh;
+  left: 5vw;
+  z-index: 1;
+  animation-name: rolling;
+  animation-duration: 10s;
+  -webkit-animation: spin 1000ms linear infinite,
+    moveLeftToRight 5s linear infinite;
+  -moz-animation: spin 1000ms linear infinite,
+    moveLeftToRight 5s linear infinite;
+  -ms-animation: spin 1000ms linear infinite, moveLeftToRight 5s linear infinite;
+  animation: spin 1000ms linear infinite, moveLeftToRight 5s linear infinite;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  position: absolute;
+  left: 0;
+  animation-direction: alternate;
+}
+
+@keyframes rolling {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@-ms-keyframes spin {
+  from {
+    -ms-transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes moveLeftToRight {
+  0% {
+    left: -100px;
+  }
+  100% {
+    left: 85%;
+  }
+}
+
+@-ms-keyframes moveLeftToRight {
+  0% {
+    left: -100px;
+  }
+  100% {
+    left: 85%;
+  }
+}
+
+@keyframes moveLeftToRight {
+  0% {
+    left: -100px;
+  }
+  100% {
+    left: 85%;
+  }
+}
+
+@-webkit-keyframes moveLeftToRight {
+  0% {
+    left: -100px;
+  }
+  100% {
+    left: 85%;
+  }
+}
+.pad{
+  margin: 5% 0;
+}
